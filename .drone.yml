@@ -8,8 +8,8 @@ pipeline:
     repo: quay.io/honestbee/drone-quay-demo
     registry: quay.io
     tags:
-      - ${DRONE_COMMIT_BRANCH}-${DRONE_COMMIT_SHA:0:8}
-      - ${DRONE_COMMIT_BRANCH}
+      - ${DRONE_COMMIT_BRANCH/master/latest}-${DRONE_COMMIT_SHA:0:8}
+      - ${DRONE_COMMIT_BRANCH/master/latest}
     when:
       branch:
         - master
