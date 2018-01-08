@@ -13,3 +13,4 @@ pipeline:
       - DOCKER_USERNAME
       - DOCKER_PASSWORD
       - DOCKER_REGISTRY
+      - DOCKER_REPO
