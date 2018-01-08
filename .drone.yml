@@ -23,7 +23,7 @@ pipeline:
     image: quay.io/joerx/mt
     pull: true
     commands:
-      curl http://webserver:3000
+      curl -sS -v http://webserver:3000
     when:
       branch:
         - master
