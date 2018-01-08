@@ -1,0 +1,24 @@
+{
+  "name": "quay-drone-demo",
+  "version": "1.0.0",
+  "description": "Demo project building quay images via drone. Here must be no secrets!",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/honestbee/quay-drone-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/honestbee/quay-drone-demo/issues"
+  },
+  "homepage": "https://github.com/honestbee/quay-drone-demo#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
