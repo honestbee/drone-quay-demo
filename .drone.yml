@@ -1,0 +1,15 @@
+pipeline:
+  publish:
+    image: plugins/docker
+    repo: ${DOCKER_REPO}
+    registry: ${DOCKER_REGISTRY}
+    tags:
+      - ${DRONE_COMMIT_BRANCH}-${DRONE_COMMIT_SHA:0:8}
+      - ${DRONE_COMMIT_BRANCH}
+    when:
+      branch:
+        - master
+    secrets:
+      - DOCKER_USERNAME
+      - DOCKER_PASSWORD
+      - DOCKER_REGISTRY
