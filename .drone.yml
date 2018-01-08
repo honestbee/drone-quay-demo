@@ -1,6 +1,6 @@
-services:
-  webserver:
-    image: quay.io/honestbee/drone-quay-demo
+# services:
+#   webserver:
+#     image: quay.io/honestbee/drone-quay-demo
 
 pipeline:
   publish:
@@ -19,11 +19,11 @@ pipeline:
       - DOCKER_REGISTRY
       - DOCKER_REPO
 
-  test-curl:
-    image: quay.io/joerx/mt
-    pull: true
-    commands:
-      curl http://webserver:3000
-    when:
-      branch:
-        - master
+  # test-curl:
+  #   image: quay.io/joerx/mt
+  #   pull: true
+  #   commands:
+  #     curl http://webserver:3000
+  #   when:
+  #     branch:
+  #       - master
